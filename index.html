@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="stylesheet" href="animate.css">
+<script type="text/javascript" src="wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </head>
 <body>
     <h1>Hello World</h1>
     <a href="/MyPortfolio/View/test.html"><button>버튼</button></a>
+    <div class="div">헬로</div>
+    <div class="emptydiv">빈칸</div>
+    <div class="div wow fadeIn">헬로스</div>
+
+    <footer class="row">
+        <span id="closeButton" onclick="this.parentElement.style.display='none';">닫기</span>
+        <p>테스트 배너</p>
+        
+    </footer>
 </body>
 </html>

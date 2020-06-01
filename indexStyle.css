@@ -1,0 +1,17 @@
+body {
+    margin: auto;
+    padding: auto;
+    height: 1500px;
+}
+div {
+    height: 100px;
+    visibility: unset;
+    cursor: pointer;
+}
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 15%;
+    background-color: aqua;
+}
