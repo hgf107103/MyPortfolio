@@ -16,11 +16,12 @@ header {
     width: 100%;
     padding: 80px 0px;
     background-color: rgb(50, 50, 50);
+    border-bottom: 1px solid black;
 }
 header h1 {
     text-align: center;
     width: 60%;
-    font-size: 50px;
+    font-size: 65px;
     color: rgb(250, 250, 250);
     font-family: "Fjalla One";
     transition: all ease 1s 0s;
@@ -32,6 +33,7 @@ header h1:hover {
 section {
     margin: auto;
     padding: 100px 0px;
+    margin-bottom: 200px;
 }
 section div#information {
     margin: auto;
@@ -43,6 +45,7 @@ section div#information h2 {
     font-family: "Sawarabi Mincho";
     text-align: center;
     font-size: 35px;
+    transition: all ease 1s 0s;
 }
 section div#information h2:hover{
     color: gray;
@@ -51,6 +54,8 @@ section div#information h2:hover{
 section div#information img {
     border: 1px solid black;
     margin: auto;
+    width: 300px;
+    height: 400px;
 }
 section div#information table {
     margin: 20px auto;
@@ -88,7 +93,7 @@ section div#mySkill {
     background-color: rgb(250, 250, 250);
 }
 section div#mySkill h2{
-    width: 40%;
+    width: 50%;
     font-family: "Sawarabi Mincho";
     text-align: center;
     font-size: 35px;
@@ -133,7 +138,7 @@ section div#mySkill table td.skilltd div.grapeColor {
     text-align: right;
     width: 0%;
     color: rgb(180,180,180);
-    transition: all ease 4s 0s;
+    transition: all ease 5s 0s;
 }
 section div#mySkill table td.skilltd div.grapeColor p {
     margin-right: 20px;
@@ -236,6 +241,74 @@ div.modal p{
     font-family: 'Sawarabi Mincho';
     font-size: 22px;
 }
+
+
+
+section h2#projectHead{
+    width: 20%;
+    font-family: "Sawarabi Mincho";
+    text-align: center;
+    font-size: 35px;
+    margin-top: 100px;
+    transition: all ease 1s 0s;
+}
+section h2#projectHead:hover{
+    color: gray;
+    transition: all ease 1s 0s;
+}
+section h3#projectHeadSub{
+    width: 40%;
+    color: gray;
+    font-weight: normal;
+    font-family: "Sawarabi Mincho";
+    text-align: center;
+    font-size: 18px;
+    transition: all ease 1s 0s;
+    margin-bottom: 60px;
+}
+section div#myProject {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+}
+section div#myProject a {
+    margin: auto 0;
+    margin-right: 50px;
+}
+section div#myProject a img{
+    border: 1px solid black;
+    cursor: pointer;
+}
+section div#myProject div {
+    width: 35%;
+    margin: 0 0;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 60px 30px;
+}
+section div#myProject div h3 {
+    font-family: 'Sawarabi Mincho';
+    font-size: 35px;
+    transition: all ease 2s 0s;
+}
+section div#myProject div h3:hover {
+    color: rgb(20,170,120);
+    transition: all ease 1s 0s;
+}
+section div#myProject div p {
+    margin-top: 30px;
+    width: 100%;
+    font-family: 'Sawarabi Mincho';
+    font-size: 20px;
+}
+section div#myProject div p span {
+    font-size: 25px;
+    color: red;
+}
+
+
 
 footer {
     background-color: white;

@@ -1,0 +1,143 @@
+<html lang="ko" oncontextmenu="alert('右クリックは不可能です。'); return false;" ondragstart="return false;" onselectstart="return false;">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&Do+Hyeon&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projectStyle.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="shortcut icon" href="../myfavicon.ico" type="image/x-icon">
+    <link rel="icon" href="../myfavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    
+    <script type="text/javascript" src="wow.min.js"></script>
+<script>
+    new WOW().init();
+
+    function bannerClose(bannerSwitch) {
+        try {
+            
+            if (bannerSwitch.value == '連絡先見ない') {
+                bannerSwitch.value = '連絡先見る'
+                document.getElementById("bannerDiv").style.display = 'none';
+                document.getElementById("bannerCloseButton").style.display = 'inline-block';
+
+            } else if (bannerSwitch.value == '連絡先見る') {
+                bannerSwitch.value = '連絡先見ない'
+                document.getElementById("bannerDiv").style.display = 'block';
+                document.getElementById("bannerCloseButton").style.display = 'none';
+
+            }
+
+        } catch (e) {
+            console.log("bannerClose_ERROR : " + e);
+        }
+    }
+</script>
+</head>
+<body>
+    <header class="row">
+        <h1 class="wow bounce" data-wow-iteration="1" data-wow-duration="1s" data-wow-delay="2s">HWANG BYUNG JUN . Portfolio</h1>
+    </header>
+
+
+    <section>
+        <h1>ユーザー機能</h1>
+        <div class="wow fadeInUp flexBox">
+            <img src="projectImg/RetaurantWeb01.png" class="wow fadeInDown leftImg" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s" alt="index">
+            <h2 class="wow fadeInUp projectInfo" data-wow-offset="150" data-wow-duration="2s" data-wow-delay="1.5s">
+                メイン画面
+            </h2>
+        </div>
+        <hr class="wow fadeIn" data-wow-offset="50" data-wow-duration="2s" data-wow-delay="0.5s">
+        <div class="wow fadeInUp flexBox">
+            <h2 class="wow fadeInUp projectInfo" data-wow-offset="150" data-wow-duration="2s" data-wow-delay="1.5s">
+                会員登録
+            </h2>
+            <img src="projectImg/RetaurantWeb02.png" class="wow fadeInDown rightImg" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s" alt="index">
+        </div>
+        <hr class="wow fadeIn" data-wow-offset="50" data-wow-duration="2s" data-wow-delay="0.5s">
+        <div class="wow fadeInUp flexBox">
+            <img src="projectImg/RetaurantWeb03.png" class="wow fadeInDown leftImg" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s" alt="index">
+            <h2 class="wow fadeInUp projectInfo" data-wow-offset="150" data-wow-duration="2s" data-wow-delay="1.5s">
+                ID重複確認
+            </h2>
+        </div>
+        <hr class="wow fadeIn" data-wow-offset="50" data-wow-duration="2s" data-wow-delay="0.5s">
+        <div class="wow fadeInUp flexBox">
+            <h2 class="wow fadeInUp projectInfo" data-wow-offset="150" data-wow-duration="2s" data-wow-delay="1.5s">
+                ログイン
+            </h2>
+            <img src="projectImg/RetaurantWeb04.png" class="wow fadeInDown rightImg" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s" alt="index">
+        </div>
+        <hr class="wow fadeIn" data-wow-offset="50" data-wow-duration="2s" data-wow-delay="0.5s">
+        <div class="wow fadeInUp flexBox">
+            <img src="projectImg/RetaurantWeb05.png" class="wow fadeInDown leftImg" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s" alt="index">
+            <h2 class="wow fadeInUp projectInfo" data-wow-offset="150" data-wow-duration="2s" data-wow-delay="1.5s">
+                USERデータベース
+            </h2>
+        </div>
+        <hr class="wow fadeIn" data-wow-offset="50" data-wow-duration="2s" data-wow-delay="0.5s">
+        <h1>マスター機能</h1>
+        <div class="wow fadeInUp flexBox">
+            <h2 class="wow fadeInUp projectInfo" data-wow-offset="150" data-wow-duration="2s" data-wow-delay="1.5s">
+                メニュー管理
+            </h2>
+            <img src="projectImg/RetaurantWeb06.png" class="wow fadeInDown rightImg" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s" alt="index">
+        </div>
+        <hr class="wow fadeIn" data-wow-offset="50" data-wow-duration="2s" data-wow-delay="0.5s">
+        <div class="wow fadeInUp flexBox">
+            <img src="projectImg/RetaurantWeb07.png" class="wow fadeInDown leftImg" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s" alt="index">
+            <h2 class="wow fadeInUp projectInfo" data-wow-offset="150" data-wow-duration="2s" data-wow-delay="1.5s">
+                全体メニュー
+            </h2>
+        </div>
+        <hr class="wow fadeIn" data-wow-offset="50" data-wow-duration="2s" data-wow-delay="0.5s">
+        <div class="wow fadeInUp flexBox">
+            <h2 class="wow fadeInUp projectInfo" data-wow-offset="150" data-wow-duration="2s" data-wow-delay="1.5s">
+                メニュー修正
+            </h2>
+            <img src="projectImg/RetaurantWeb08.png" class="wow fadeInDown rightImg" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s" alt="index">
+        </div>
+        <hr class="wow fadeIn" data-wow-offset="50" data-wow-duration="2s" data-wow-delay="0.5s">
+        <div class="wow fadeInUp flexBox">
+            <img src="projectImg/RetaurantWeb09.png" class="wow fadeInDown leftImg" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s" alt="index">
+            <h2 class="wow fadeInUp projectInfo" data-wow-offset="150" data-wow-duration="2s" data-wow-delay="1.5s">
+                メニュー削除
+            </h2>
+        </div>
+        <hr class="wow fadeIn" data-wow-offset="50" data-wow-duration="2s" data-wow-delay="0.5s">
+        <div class="wow fadeInUp flexBox">
+            <h2 class="wow fadeInUp projectInfo" data-wow-offset="150" data-wow-duration="2s" data-wow-delay="1.5s">
+                メニュー追加
+            </h2>
+            <img src="projectImg/RetaurantWeb10.png" class="wow fadeInDown rightImg" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s" alt="index">
+        </div>
+        <hr class="wow fadeIn" data-wow-offset="50" data-wow-duration="2s" data-wow-delay="0.5s">
+        <div class="wow fadeInUp flexBox">
+            <img src="projectImg/RetaurantWeb11.png" class="wow fadeInDown leftImg" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s" alt="index">
+            <h2 class="wow fadeInUp projectInfo" data-wow-offset="150" data-wow-duration="2s" data-wow-delay="1.5s">
+                お客、テーブル管理
+            </h2>
+        </div>
+        <hr class="wow fadeIn" data-wow-offset="50" data-wow-duration="2s" data-wow-delay="0.5s">
+        <div class="wow fadeInUp flexBox">
+            <h2 class="wow fadeInUp projectInfo" data-wow-offset="150" data-wow-duration="2s" data-wow-delay="1.5s">
+                現在テーブル状況
+            </h2>
+            <img src="projectImg/RetaurantWeb12.png" class="wow fadeInDown rightImg" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s" alt="index">
+        </div>
+    </section>
+
+
+
+    <footer class="row">
+        <input type="button" onclick="bannerClose(this)" value="連絡先見る">
+        <input id="bannerCloseButton" style="display: inline-block;" type="button" onclick="this.parentElement.style.display = 'none'" value="バナー消す">
+        <div id="bannerDiv" style="display: none;">
+            <p>Tel : 82+ 10 8864 4257</p>
+            <p>Email : hgf107103@gmail.com</p>
+            <p>github : <a href="https://github.com/hgf107103">https://github.com/hgf107103</a></p>
+        </div>
+    </footer>
+</body>
+</html>
