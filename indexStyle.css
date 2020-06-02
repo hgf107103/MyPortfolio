@@ -30,26 +30,33 @@ header h1:hover {
     transition: all ease 2s 0s;
 }
 section {
-    width: 90%;
     margin: auto;
     padding: 100px 0px;
 }
 section div#information {
-    display: flex;
-    flex-flow: row;
-    flex-direction: row;
-    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+section div#information h2 {
+    width: 40%;
+    margin-bottom: 40px;
+    font-family: "Sawarabi Mincho";
+    text-align: center;
+    font-size: 35px;
+}
+section div#information h2:hover{
+    color: gray;
+    transition: all ease 1s 0s;
 }
 section div#information img {
     border: 1px solid black;
-    margin: 0 70px;
+    margin: auto;
 }
 section div#information table {
-    margin: auto;
+    margin: 20px auto;
     width: 40%;
     border-collapse: collapse;
     text-align: center;
-    margin: auto 0;
 }
 section div#information table td{
     font-family: "Sawarabi Mincho";
@@ -75,7 +82,8 @@ section div#information table td.tableValue:hover {
 }
 
 section div#mySkill {
-    margin: 50px 0px;
+    width: 50%;
+    margin: 50px auto;
     padding: 50px;
     background-color: rgb(250, 250, 250);
 }
@@ -84,25 +92,124 @@ section div#mySkill h2{
     font-family: "Sawarabi Mincho";
     text-align: center;
     font-size: 35px;
+    transition: all ease 1s 0s;
 }
 section div#mySkill h2:hover{
     color: gray;
+    transition: all ease 1s 0s;
+}
+section div#mySkill h3{
+    width: 40%;
+    color: gray;
+    font-weight: normal;
+    font-family: "Sawarabi Mincho";
+    text-align: center;
+    font-size: 18px;
+    transition: all ease 1s 0s;
 }
 section div#mySkill table {
-    width: 80%;
-    border: 1px solid black;
+    width: 70%;
     margin-top: 50px;
     text-align: center;
 }
 section div#mySkill table td.logotd {
     text-align: right;
-    width: 35%;
+    width: 100px;
     padding: 10px 0px;
+    height: 100px;
+}
+section div#mySkill table td.logotd img {
+    cursor: pointer;
 }
 section div#mySkill table td.skilltd {
     padding-left: 20px;
     text-align: left;
-    width: 65%;
+    height: 100px;
+}
+section div#mySkill table td.skilltd div.grapeColor {
+    display: inline-block;
+    margin: 0 0;
+    padding: 2% 0px;
+    text-align: right;
+    width: 0%;
+    color: gray;
+    transition: all ease 4s 0s;
+}
+section div#mySkill table td.skilltd div.grapeColor p {
+    margin-right: 20px;
+    font-family: "Sawarabi Mincho";
+}
+section div#mySkill table td.logotd:hover + td.skilltd div#htmlGrape {
+    width: 90%;
+    text-align: right;
+    background-color: rgb(240, 100, 35);
+    box-shadow: 0 0 0 2px rgba(240, 100, 35, 0.8);
+    color: black;
+    transition: all ease 2s 0s;
+}
+section div#mySkill table td.logotd:hover + td.skilltd div#jspGrape {
+    width: 100%;
+    text-align: right;
+    background-color: rgb(0,0,0);
+    box-shadow: 0 0 0 2px rgba(30, 30, 30, 0.6);
+    color: white;
+    transition: all ease 2s 0s;
+}
+section div#mySkill table td.logotd:hover + td.skilltd div#cssGrape {
+    width: 80%;
+    text-align: right;
+    background-color: rgb(41, 169, 223);
+    box-shadow: 0 0 0 2px rgba(41, 169, 223, 0.8);
+    color: black;
+    transition: all ease 2s 0s;
+}
+section div#mySkill table td.logotd:hover + td.skilltd div#jsGrape {
+    width: 60%;
+    text-align: right;
+    background-color: rgb(255, 255, 0);
+    box-shadow: 0 0 0 2px rgba(235, 235, 0, 0.8);
+    color: black;
+    transition: all ease 2s 0s;
+}
+section div#mySkill table td.logotd:hover + td.skilltd div#javaGrape {
+    width: 90%;
+    text-align: right;
+    background-color: rgb(240,0,0);
+    box-shadow: 0 0 0 2px rgba(255,0,0, 0.8);
+    color: white;
+    transition: all ease 2s 0s;
+}
+section div#mySkill table td.logotd:hover + td.skilltd div#jqueryGrape {
+    width: 40%;
+    text-align: right;
+    background-color: rgb(30, 120, 170);
+    box-shadow: 0 0 0 2px rgba(30, 120, 170, 0.8);
+    color: white;
+    transition: all ease 2s 0s;
+}
+section div#mySkill table td.logotd:hover + td.skilltd div#springGrape {
+    width: 70%;
+    text-align: right;
+    background-color: rgb(110, 180, 65);
+    box-shadow: 0 0 0 2px rgba(110, 180, 65, 0.8);
+    color: white;
+    transition: all ease 2s 0s;
+}
+section div#mySkill table td.logotd:hover + td.skilltd div#mysqlGrape {
+    width: 80%;
+    text-align: right;
+    background-color: rgb(30, 120, 170);
+    box-shadow: 0 0 0 2px rgba(30, 120, 170, 0.8);
+    color: white;
+    transition: all ease 2s 0s;
+}
+section div#mySkill table td.logotd:hover + td.skilltd div#oracleGrape {
+    width: 50%;
+    text-align: right;
+    background-color: rgb(207, 60, 56);
+    box-shadow: 0 0 0 2px rgba(207, 60, 56, 0.8);
+    color: white;
+    transition: all ease 2s 0s;
 }
 
 footer {
@@ -153,3 +260,4 @@ footer div p a:hover {
 footer div p a:active {
     text-decoration: none;
 }
+

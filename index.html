@@ -2,14 +2,22 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>HWANG BYUNG JUN Portfolio</title>
+    
+<script src="http://code.jquery.com/jquery-latest.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&Do+Hyeon&family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="indexStyle.css">
     <link rel="stylesheet" href="animate.css">
+    <link rel="shortcut icon" href="myfavicon.ico" type="image/x-icon">
+    <link rel="icon" href="myfavicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 <script type="text/javascript" src="wow.min.js"></script>
 <script type="text/javascript" src="indexScript.js"></script>
 <script>
     new WOW().init();
+
+
 
     function bannerClose(bannerSwitch) {
         try {
@@ -38,7 +46,8 @@
     </header>
     <section>
         <div id="information">
-            <img src="myphoto.jpg" class="wow fadeInLeft" data-wow-offset="10" data-wow-duration="2s" data-wow-delay="0.5s" alt="myphoto" width="200px">
+            <h2>基本情報</h2>
+            <img src="myphoto.jpg" class="wow fadeInLeft" height="267px" data-wow-offset="10" data-wow-duration="2s" data-wow-delay="0.5s" alt="myphoto" width="200px">
             <table class="wow fadeInRight" data-wow-duration="2s" data-wow-delay="1.2s">
                 <tr>
                     <td class="tableHeader">名前</td>
@@ -58,35 +67,135 @@
         </div>
         <div id="mySkill">
             <h2>自分のスキル情報</h2>
+            <h3>絵にマウスを載せみてください</h3>
             <table>
                 <tr>
-                    <td class="logotd"><img src="Logo/htmlLogo.png" alt="htmlLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s"></td>
-                    <td class="skilltd">HTML</td>
+                    <td class="logotd">
+                        <a href="#htmlmodal" rel="modal:open">
+                            <img src="Logo/htmlLogo.png" alt="htmlLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s">
+                        </a>
+                    </td>
+                    <td class="skilltd">
+                        <div class="grapeColor" id="htmlGrape"><p>90</p></div>
+                    </td>
                 </tr>
                 <tr>
-                    <td class="logotd"><img src="Logo/cssLogo.png" alt="cssLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s"></td>
-                    <td class="skilltd">CSS</td>
+                    <td class="logotd">
+                        <a href="#jspmodal" rel="modal:open">
+                            <img src="Logo/JSPLogo.png" alt="jspLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s">
+                        </a>
+                    </td>
+                    <td class="skilltd">
+                        <div class="grapeColor" id="jspGrape"><p>100</p></div>
+                    </td>
                 </tr>
                 <tr>
-                    <td class="logotd"><img src="Logo/javascriptLogo.png" alt="javascriptLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s"></td>
-                    <td class="skilltd">Javascript</td>
+                    <td class="logotd">
+                        <a href="#cssmodal" rel="modal:open">
+                            <img src="Logo/cssLogo.png" alt="cssLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s">
+                        </a>
+                    </td>
+                    <td class="skilltd">
+                        <div class="grapeColor" id="cssGrape"><p>80</p></div>
+                    </td>
                 </tr>
                 <tr>
-                    <td class="logotd"><img src="Logo/javaLogo.png" alt="javaLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s"></td>
-                    <td class="skilltd">Java</td>
+                    <td class="logotd">
+                        <a href="#jsmodal" rel="modal:open">
+                            <img src="Logo/javascriptLogo.png" alt="javascriptLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s">
+                        </a>
+                        </td>
+                    <td class="skilltd">
+                        <div class="grapeColor" id="jsGrape"><p>60</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="logotd">
+                        <a href="#jquerymodal" rel="modal:open">
+                            <img src="Logo/jqueryLogo.png" alt="jqueryLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s">
+                        </a>
+                        </td>
+                    <td class="skilltd">
+                        <div class="grapeColor" id="jqueryGrape"><p>40</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="logotd">
+                        <a href="#javamodal" rel="modal:open">
+                            <img src="Logo/javaLogo.png" alt="javaLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s">
+                        </a>
+                    </td>
+                    <td class="skilltd">
+                        <div class="grapeColor" id="javaGrape"><p>90</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="logotd">
+                        <a href="#springmodal" rel="modal:open">
+                            <img src="Logo/springLogo.png" alt="springLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s">
+                        </a>
+                    </td>
+                    <td class="skilltd">
+                        <div class="grapeColor" id="springGrape"><p>70</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="logotd">
+                        <a href="#mysqlmodal" rel="modal:open">
+                            <img src="Logo/mysqlLogo.png" alt="mysqlLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s">
+                        </a>
+                    </td>
+                    <td class="skilltd">
+                        <div class="grapeColor" id="mysqlGrape"><p>80</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="logotd">
+                        <a href="#oraclemodal" rel="modal:open">
+                            <img src="Logo/oracleLogo.png" alt="oracleLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s">
+                    </td>
+                    <td class="skilltd">
+                        <div class="grapeColor" id="oracleGrape"><p>50</p></div>
+                    </td>
                 </tr>
             </table>
         </div>
     </section>
+    <div id="htmlmodal" class="modal">
+        <p style="font-family: 'Sawarabi Mincho'; font-size: 22px;">HTMLではどんな形を持っている画面でも易く具現することが可能です。<br>最も自信のあるものであります。でも、jstlなどがあるJSPの方を好むので90にしました。PHPは不可能です。</p>
+    </div>
+    <div id="jspmodal" class="modal">
+        <p style="font-family: 'Sawarabi Mincho'; font-size: 22px;">私が一番自信を持っている技術です。JSTLの使用法も馴染んでいてどんなデータも欲しい通りに画面に映すことが可能です。<br>私のプロジェクトの中でも過半数であります。</p>
+    </div>
+    <div id="cssmodal" class="modal">
+        <p style="font-family: 'Sawarabi Mincho'; font-size: 22px;">CSSで簡単なデザインからアニメーションまで具現することが可能ですが、たまに迷うときがあります。<br>たまに訳を分からない状況に落ち、欲しい通りに進まない場合があります。</p>
+    </div>
+    <div id="jsmodal" class="modal">
+        <p style="font-family: 'Sawarabi Mincho'; font-size: 22px;">バニラJavaScriptはほどほどに使えますが、非同期への知識が足りないです。<br>まだ、効率的なアルゴリズムは具現できず、時々迷ったりします。<br>また、NodeやVue、Reactは不可能です。</p>
+    </div>
+    <div id="jquerymodal" class="modal">
+        <p style="font-family: 'Sawarabi Mincho'; font-size: 22px;">プロジェクトの途中、時々使ったことはありますが、既に作成されているライブラリを利用しただけであります。<br>そのため、自らjQueryを利用してFunctionを作成したことはありません。<br>その理由で、まだjQueryの知識はだいぶ足りない状況です。</p>
+    </div>
+    <div id="javamodal" class="modal">
+        <p style="font-family: 'Sawarabi Mincho'; font-size: 22px;">一番多くの時間をJavaに注ぎ、取り込みました。SWINGライブラリを利用してGUIプログラムを作ったことがあります。難しくないアルゴリズムはJavaで具現可能です。</p>
+    </div>
+    <div id="springmodal" class="modal">
+        <p style="font-family: 'Sawarabi Mincho'; font-size: 22px;">Javaを勉強してから、エンタープライズソリューション開発のため勉強したフレームワークです。自由自在とは言えないがある程度は可能で、IoCやDIの意味もしっかり把握しています。</p>
+    </div>
+    <div id="mysqlmodal" class="modal">
+        <p style="font-family: 'Sawarabi Mincho'; font-size: 22px;">私が一番まめに使うデータベースです。ORACLEより簡単なことが長所で愛用しました。簡単なDDL,DMLからJOIN、VIEWか可能で、Keyの意味をしっかり知っています。だが、まだIFやCASEなどの使用が苦手です。DCLも使ったことありますが、頻繁ではありません。</p>
+    </div>
+    <div id="oraclemodal" class="modal">
+        <p style="font-family: 'Sawarabi Mincho'; font-size: 22px;">たまにMySQLより機能のいいデータベースが必要な時に使いますが、熟練度が足りません。でも、勉強最初からORACLEを使っていることと、データベースの使用が慣れているのでORACLEもわりとできると思います。</p>
+    </div>
     <footer class="row">
         <input type="button" onclick="bannerClose(this)" value="連絡先見る">
-        <input id="bannerCloseButton" style="display: inline-block;" type="button" onclick="this.parentElement.style.display = 'inline-block'" value="バナー消す">
+        <input id="bannerCloseButton" style="display: inline-block;" type="button" onclick="this.parentElement.style.display = 'none'" value="バナー消す">
         <div id="bannerDiv" style="display: none;">
             <p>Tel : 82+ 10 8864 4257</p>
             <p>Email : hgf107103@gmail.com</p>
             <p>github : <a href="https://github.com/hgf107103">https://github.com/hgf107103</a></p>
         </div>
-        
     </footer>
 </body>
 </html>
