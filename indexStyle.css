@@ -132,7 +132,7 @@ section div#mySkill table td.skilltd div.grapeColor {
     padding: 2% 0px;
     text-align: right;
     width: 0%;
-    color: gray;
+    color: rgb(180,180,180);
     transition: all ease 4s 0s;
 }
 section div#mySkill table td.skilltd div.grapeColor p {
@@ -210,6 +210,31 @@ section div#mySkill table td.logotd:hover + td.skilltd div#oracleGrape {
     box-shadow: 0 0 0 2px rgba(207, 60, 56, 0.8);
     color: white;
     transition: all ease 2s 0s;
+}
+section div#mySkill table td.logotd:hover + td.skilltd div#cGrape {
+    width: 50%;
+    text-align: right;
+    background-color: rgb(100, 153, 209);
+    box-shadow: 0 0 0 2px rgba(100, 153, 209, 0.8);
+    color: black;
+    transition: all ease 2s 0s;
+}
+section div#mySkill table td.logotd:hover + td.skilltd div#pythonGrape {
+    width: 30%;
+    text-align: right;
+    background-color: rgb(50,110,157);
+    box-shadow: 0 0 0 2px rgba(50,110,157, 0.8);
+    color: white;
+    transition: all ease 2s 0s;
+}
+
+div.modal {
+    padding: 50px 30px;
+}
+
+div.modal p{
+    font-family: 'Sawarabi Mincho';
+    font-size: 22px;
 }
 
 footer {
