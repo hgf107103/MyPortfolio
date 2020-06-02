@@ -1,17 +1,142 @@
+* {
+    margin: auto;
+    padding: auto;
+    cursor: default;
+}
+*:focus {
+    outline: none;
+}
 body {
     margin: auto;
     padding: auto;
     height: 1500px;
 }
-div {
-    height: 100px;
-    visibility: unset;
-    cursor: pointer;
+header {
+    margin: auto;
+    width: 100%;
+    padding: 80px 0px;
+    background-color: rgb(50, 50, 50);
+    transition: all ease 1s 0s;
 }
+header h1 {
+    text-align: center;
+    width: 60%;
+    font-size: 50px;
+    color: rgb(250, 250, 250);
+    font-family: "Fjalla One";
+    transition: all ease 1s 0s;
+}
+header h1:hover {
+    color: rgb(20,170,120);
+    transition: all ease 2s 0s;
+}
+section {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0px;
+}
+section div#information {
+    display: flex;
+    flex-flow: row;
+    flex-direction: row;
+    justify-content: center;
+}
+section div#information img {
+    border: 1px solid black;
+    margin: 0 70px;
+}
+section div#information table {
+    margin: auto;
+    width: 40%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto 0;
+}
+section div#information table td{
+    font-family: "Sawarabi Mincho";
+    border: 1px solid black;
+    
+}
+section div#information table td.tableHeader{
+    color: red;
+    font-size: 23px;
+    padding: 0 5px;
+    border-left: none;
+}
+section div#information table td.tableValue{
+    font-size: 20px;
+    padding: 20px 20px;
+    border-right: none;
+    color: gray;
+    transition: all ease 0.5s 0s;
+}
+section div#information table td.tableValue:hover {
+    color: black;
+    transition: all ease 1s 0s;
+}
+
+section div#mySkill {
+    margin: 50px 0px;
+    padding: 50px;
+    background-color: rgb(250, 250, 250);
+}
+section div#mySkill h2{
+    width: 40%;
+    font-family: "Sawarabi Mincho";
+    text-align: center;
+    font-size: 35px;
+    transition: all ease 1s 0s;
+}
+section div#mySkill h2:hover{
+    color: gray;
+    transition: all ease 1s 0s;
+}
+section div#mySkill table {
+    width: 80%;
+    border: 1px solid black;
+    margin-top: 50px;
+}
+
 footer {
     width: 100%;
     position: fixed;
+    background-color: white;
     bottom: 0;
-    height: 15%;
-    background-color: aqua;
+    border-top: 1px solid black;
+}
+footer input[type = button] {
+    padding: 3px 10px;
+    margin: 10px 10px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0px;
+    transition: all linear 0.5s 0s;
+}
+footer input[type = button]:hover {
+    border: 1px solid rgb(20,170,120);
+    color: rgb(20,170,120);
+    border-radius: 20px;
+    transition: all linear 0.5s 0s;
+}
+footer div {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+footer div p {
+    margin: auto;
+}
+footer div p a {
+    cursor: pointer;
+    text-decoration: none;
+    color: gray;
+    transition: all linear 1s 0s;
+}
+footer div p a:hover {
+    color: red;
+    transition: all linear 1s 0s;
+}
+footer div p a:active {
+    text-decoration: none;
 }

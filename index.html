@@ -4,23 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&Do+Hyeon&family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="indexStyle.css">
     <link rel="stylesheet" href="animate.css">
 <script type="text/javascript" src="wow.min.js"></script>
+<script type="text/javascript" src="indexScript.js"></script>
 <script>
     new WOW().init();
+
+    function bannerClose(bannerSwitch) {
+        try {
+            
+            if (bannerSwitch.value == '배너 닫기') {
+                bannerSwitch.value = '배너 열기'
+                document.getElementById("bannerDiv").style.display = 'none';
+                document.getElementById("bannerCloseButton").style.display = 'inline-block';
+
+            } else if (bannerSwitch.value == '배너 열기') {
+                bannerSwitch.value = '배너 닫기'
+                document.getElementById("bannerDiv").style.display = 'block';
+                document.getElementById("bannerCloseButton").style.display = 'none';
+
+            }
+
+        } catch (e) {
+            console.log("bannerClose_ERROR : " + e);
+        }
+    }
 </script>
 </head>
 <body>
-    <h1>Hello World</h1>
-    <a href="/MyPortfolio/View/test.html"><button>버튼</button></a>
-    <div class="div">헬로</div>
-    <div class="emptydiv">빈칸</div>
-    <div class="div wow fadeIn">헬로스</div>
+    <header>
+        <h1 class="wow bounce" data-wow-iteration="1" data-wow-duration="1s" data-wow-delay="2s">HWANG BYUNG JUN . Portfolio</h1>
+    </header>
+    <section>
+        <div id="information">
+            <img src="myphoto.jpg" class="wow fadeInLeft" data-wow-offset="10" data-wow-duration="2s" data-wow-delay="0.5s" alt="myphoto" width="200px">
+            <table class="wow fadeInRight" data-wow-duration="2s" data-wow-delay="1.2s">
+                <tr>
+                    <td class="tableHeader">名前</td>
+                    <td class="tableValue">ファンビョンジュン<br>
+                        HWANG BYUNG JUN
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tableHeader">生年月日</td>
+                    <td class="tableValue">1996.09.07</td>
+                </tr>
+                <tr>
+                    <td class="tableHeader">専攻</td>
+                    <td class="tableValue">東アジア学部<br>日語日文学科</td>
+                </tr>
+            </table>
+        </div>
+        <div id="mySkill">
+            <h2>自分のスキル情報</h2>
+            <table>
 
+            </table>
+        </div>
+    </section>
     <footer class="row">
-        <span id="closeButton" onclick="this.parentElement.style.display='none';">닫기</span>
-        <p>테스트 배너</p>
+        <input type="button" onclick="bannerClose(this)" value="배너 닫기">
+        <input id="bannerCloseButton" style="display: none;" type="button" onclick="this.parentElement.style.display = 'none'" value="완전 종료">
+        <div id="bannerDiv">
+            <p>Tel : 82+ 10 8864 4257</p>
+            <p>Email : hgf107103@gmail.com</p>
+            <p>github : <a href="https://github.com/hgf107103">https://github.com/hgf107103</a></p>
+        </div>
         
     </footer>
 </body>
