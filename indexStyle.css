@@ -1,3 +1,6 @@
+html {
+    margin: 0 0;
+}
 * {
     margin: auto;
     padding: auto;
@@ -30,9 +33,9 @@ header h1:hover {
     transition: all ease 2s 0s;
 }
 section {
-    width: 1000px;
+    width: 1200px;
     margin: auto;
-    padding: 50px 0px;
+    padding: 100px 0px;
 }
 section div#information {
     display: flex;
@@ -116,6 +119,8 @@ footer {
 footer input[type = button] {
     padding: 3px 10px;
     margin: 10px 10px;
+    font-family: "Sawarabi Mincho";
+    font-size: 18px;
     cursor: pointer;
     background-color: white;
     border: 1px solid black;
@@ -135,6 +140,8 @@ footer div {
 }
 footer div p {
     margin: auto;
+    font-family: "Sawarabi Mincho";
+    font-size: 22px;
 }
 footer div p a {
     cursor: pointer;

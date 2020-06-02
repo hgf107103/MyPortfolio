@@ -2,7 +2,6 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&Do+Hyeon&family=Fjalla+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="indexStyle.css">
@@ -15,13 +14,13 @@
     function bannerClose(bannerSwitch) {
         try {
             
-            if (bannerSwitch.value == '배너 닫기') {
-                bannerSwitch.value = '배너 열기'
+            if (bannerSwitch.value == '連絡先見ない') {
+                bannerSwitch.value = '連絡先見る'
                 document.getElementById("bannerDiv").style.display = 'none';
                 document.getElementById("bannerCloseButton").style.display = 'inline-block';
 
-            } else if (bannerSwitch.value == '배너 열기') {
-                bannerSwitch.value = '배너 닫기'
+            } else if (bannerSwitch.value == '連絡先見る') {
+                bannerSwitch.value = '連絡先見ない'
                 document.getElementById("bannerDiv").style.display = 'block';
                 document.getElementById("bannerCloseButton").style.display = 'none';
 
@@ -34,7 +33,7 @@
 </script>
 </head>
 <body>
-    <header>
+    <header class="row">
         <h1 class="wow bounce" data-wow-iteration="1" data-wow-duration="1s" data-wow-delay="2s">HWANG BYUNG JUN . Portfolio</h1>
     </header>
     <section>
@@ -61,27 +60,27 @@
             <h2>自分のスキル情報</h2>
             <table>
                 <tr>
-                    <td class="logotd"><img src="Logo/htmlLogo.png" alt="htmlLogo" width="100px" class="wow fadeIn" data-wow-offset="200" data-wow-delay="0.5s" data-wow-duration="2s"></td>
+                    <td class="logotd"><img src="Logo/htmlLogo.png" alt="htmlLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s"></td>
                     <td class="skilltd">HTML</td>
                 </tr>
                 <tr>
-                    <td class="logotd"><img src="Logo/cssLogo.png" alt="htmlLogo" width="100px" class="wow fadeIn" data-wow-offset="200" data-wow-delay="0.5s" data-wow-duration="2s"></td>
-                    <td class="skilltd">HTML</td>
+                    <td class="logotd"><img src="Logo/cssLogo.png" alt="cssLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s"></td>
+                    <td class="skilltd">CSS</td>
                 </tr>
                 <tr>
-                    <td class="logotd"><img src="Logo/javascriptLogo.png" alt="htmlLogo" width="100px" class="wow fadeIn" data-wow-offset="200" data-wow-delay="0.5s" data-wow-duration="2s"></td>
-                    <td class="skilltd">HTML</td>
+                    <td class="logotd"><img src="Logo/javascriptLogo.png" alt="javascriptLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s"></td>
+                    <td class="skilltd">Javascript</td>
                 </tr>
                 <tr>
-                    <td class="logotd"><img src="Logo/javaLogo.png" alt="htmlLogo" width="100px" class="wow fadeIn" data-wow-offset="200" data-wow-delay="0.5s" data-wow-duration="2s"></td>
-                    <td class="skilltd">HTML</td>
+                    <td class="logotd"><img src="Logo/javaLogo.png" alt="javaLogo" width="100px" class="wow fadeIn" data-wow-offset="250" data-wow-delay="0.5s" data-wow-duration="2s"></td>
+                    <td class="skilltd">Java</td>
                 </tr>
             </table>
         </div>
     </section>
     <footer class="row">
-        <input type="button" onclick="bannerClose(this)" value="배너 열기">
-        <input id="bannerCloseButton" style="display: none;" type="button" onclick="this.parentElement.style.display = 'inline-block'" value="완전 종료">
+        <input type="button" onclick="bannerClose(this)" value="連絡先見る">
+        <input id="bannerCloseButton" style="display: inline-block;" type="button" onclick="this.parentElement.style.display = 'inline-block'" value="バナー消す">
         <div id="bannerDiv" style="display: none;">
             <p>Tel : 82+ 10 8864 4257</p>
             <p>Email : hgf107103@gmail.com</p>
