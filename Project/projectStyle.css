@@ -39,7 +39,7 @@ header h1:hover {
 section {
     margin: auto;
     padding: 100px 0px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 section h1{
     width: 25%;
@@ -92,8 +92,29 @@ hr {
     width: 60%;
     margin: 100px auto;
 }
+section h1#databaseHead{
+    width: 35%;
+    font-family: "Sawarabi Mincho";
+    margin: auto;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    transition: all ease 2s 0s;
+}
+section h1#databaseHead:hover{
+    color: gray;
+    transition: all ease 1s 0s;
+}
 
-
+section div.flexBox img#databaseImg {
+    width: 50%;
+    margin: auto;
+    transition: all ease 2s 0s;
+}
+section div.flexBox img#databaseImg:hover {
+    width: 65%;
+    transition: all ease 2s 0s;
+}
 
 
 
