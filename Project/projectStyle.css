@@ -42,7 +42,7 @@ section {
     margin-bottom: 100px;
 }
 section h1{
-    width: 25%;
+    width: 100%;
     font-family: "Sawarabi Mincho";
     margin: auto;
     text-align: center;
@@ -50,7 +50,11 @@ section h1{
     margin-bottom: 50px;
     transition: all ease 2s 0s;
 }
-section h1:hover{
+section h1 span{
+    color: black
+    transition: all ease 1s 0s;
+}
+section h1 span:hover{
     color: gray;
     transition: all ease 1s 0s;
 }
