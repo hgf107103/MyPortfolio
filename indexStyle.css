@@ -64,10 +64,18 @@ section div#information img {
     margin: auto;
     width: 300px;
     height: 400px;
+    transition: all ease 2s 0s;
+}
+section div#information img:hover {
+    transform: rotate(720deg);
+    border-radius: 300px;
+    box-shadow: 0 0 0 500px rgba(20,170,120, 0.1);
+    transition: all ease 3s 0s;
 }
 section div#information table {
     margin: 20px auto;
     width: 40%;
+    background-color: white;
     border-collapse: collapse;
     text-align: center;
 }
