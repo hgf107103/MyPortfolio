@@ -116,7 +116,27 @@ section div.flexBox img#databaseImg:hover {
     transition: all ease 2s 0s;
 }
 
-
+section div#gitbox {
+    margin-top: 80px;
+}
+section div#gitbox a {
+    margin: auto;
+    text-align: center;
+}
+section div#gitbox img#githubLogo {
+    cursor: pointer;
+    width: 40%;
+    border: 1xp soldi black;
+    border-radius: 1000px;
+    transition: all ease 2s 0s;
+}
+section div#gitbox img#githubLogo:hover {
+    width: 50%;
+    border: 2xp soldi rgb(50,200,150);
+    box-shadow: 0 0 0 10px rgba(20,170,120, 0.5);
+    transform: rotate(720deg);
+    transition: all ease 1s 0s;
+}
 
 
 
