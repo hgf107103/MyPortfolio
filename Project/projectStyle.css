@@ -51,7 +51,7 @@ section h1{
     transition: all ease 2s 0s;
 }
 section h1 span{
-    color: black
+    color: black;
     transition: all ease 1s 0s;
 }
 section h1 span:hover{

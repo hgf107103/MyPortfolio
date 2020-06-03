@@ -48,7 +48,7 @@ section div#information h2 {
     transition: all ease 1s 0s;
 }
 section div#information h2 span{
-    color: black
+    color: black;
     transition: all ease 1s 0s;
 }
 section div#information h2 span:hover{
