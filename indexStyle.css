@@ -34,6 +34,67 @@ header h1 span:hover {
     color: rgb(20,170,120);
     transition: all ease 2s 0s;
 }
+
+
+
+div#indexBox {
+    padding: 30px 30px;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    border: 2px solid rgba(50, 50, 50, 0.7);
+    box-shadow: 0 0 0 3px rgba(20, 20, 20, 0.5);
+    border-radius: 15px;
+    text-align: center;
+}
+div#indexBox #indexTitle {
+    font-family: "Sawarabi Mincho";
+    font-size: 25px;
+    padding-bottom: 20px;
+    transition: all ease 1s 0s;
+}
+div#indexBox #indexTitle:hover {
+    color: gray;
+    transition: all ease 1s 0s;
+}
+div#indexBox input[type=button] {
+    font-family: "Sawarabi Mincho";
+    font-size: 18px;
+    padding: 3px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 20px;
+    transition: all ease 1s 0s;
+}
+div#indexBox input[type=button]:hover {
+    border-radius: 20px;
+    color: rgb(20, 170, 120);
+    border: 1px solid rgb(20, 170, 120);
+    box-shadow: 0 0 0 3px rgba(20,170,120,0.5);
+    transition: all ease 1s 0s;
+}
+div#indexBox p a {
+    font-size: 20px;
+    font-family: "Sawarabi Mincho";
+    cursor: pointer;
+    text-decoration: none;
+    color: gray;
+    transition: all linear 1s 0s;
+}
+div#indexBox p a:hover {
+    color: red;
+    text-shadow: 0 0 0 5px black;
+    transition: all linear 1s 0s;
+}
+div#indexBox p a:active {
+    text-decoration: none;
+}
+
+
+
+
 section {
     margin: auto;
     padding: 100px 0px;
@@ -64,13 +125,12 @@ section div#information img {
     margin: auto;
     width: 300px;
     height: 400px;
-    transition: all ease 2s 0s;
+    transition: all ease 1s 0s;
 }
 section div#information img:hover {
-    transform: rotate(720deg);
+    transform: rotate(360deg);
     border-radius: 300px;
-    box-shadow: 0 0 0 500px rgba(20,170,120, 0.1);
-    transition: all ease 3s 0s;
+    transition: all ease 1.5s 0s;
 }
 section div#information table {
     margin: 20px auto;
@@ -337,7 +397,7 @@ section div#myProject div p span {
 footer {
     background-color: white;
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     position: fixed;
     bottom: 0;
     border-top: 1px solid black;
@@ -345,8 +405,9 @@ footer {
 footer input[type = button] {
     padding: 3px 10px;
     margin: 10px 10px;
+    margin-bottom: 0px;
     font-family: "Sawarabi Mincho";
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     background-color: white;
     border: 1px solid black;
@@ -367,7 +428,7 @@ footer div {
 footer div p {
     margin: auto;
     font-family: "Sawarabi Mincho";
-    font-size: 22px;
+    font-size: 18px;
 }
 footer div p a {
     cursor: pointer;

@@ -17,7 +17,11 @@
 <script>
     new WOW().init();
 
-
+    window.onload = function() {
+        setTimeout (function () {
+            scrollTo(0,0);
+        }, 100);
+    }
 
     function bannerClose(bannerSwitch) {
         try {
@@ -38,12 +42,42 @@
             console.log("bannerClose_ERROR : " + e);
         }
     }
+
+    function indexClose(indexSwitch) {
+        try {
+            if (indexSwitch.value == '畳む') {
+                indexSwitch.value = '開く'
+                document.getElementById("indexText").style.display = 'none';
+                document.getElementById("indexTitle").style.paddingBottom = '0px';
+                document.getElementById("indexColser").style.display = 'block';
+
+            } else if (indexSwitch.value == '開く') {
+                indexSwitch.value = '畳む'
+                document.getElementById("indexText").style.display = 'block';
+                document.getElementById("indexTitle").style.paddingBottom = '20px';
+                document.getElementById("indexColser").style.display = 'none';
+
+            }
+        } catch (error) {
+            console.log("indexClose_ERROR : " + e);
+        }
+    }
 </script>
 </head>
 <body>
     <header class="row">
         <h1 class="wow bounce" data-wow-iteration="1" data-wow-duration="1s" data-wow-delay="2s"><span>HWANG BYUNG JUN . Portfolio</span></h1>
     </header>
+    <div id="indexBox" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+        <h4 id="indexTitle">目次</h4>
+        <div id="indexText">
+            <p><a href="#information">基本情報</a></p>
+            <p><a href="#mySkill">スキル情報</a></p>
+            <p><a href="#myProject">プロジェクト</a></p>
+        </div>
+        <input type="button" onclick="indexClose(this)" value="畳む">
+        <input type="button" id="indexColser" style="display: none; margin-top: 3px;" onclick="this.parentElement.style.display = 'none'" value="消す">
+    </div>
     <section>
         <div id="information">
             <h2><span>基本情報</span></h2>
@@ -66,7 +100,7 @@
             </table>
         </div>
         <div id="mySkill">
-            <h2><span>自分のスキル情報</span></h2>
+            <h2><span>スキル情報</span></h2>
             <h3>絵にマウスを載せみてください</h3>
             <table>
                 <tr>
