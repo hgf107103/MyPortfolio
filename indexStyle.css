@@ -98,7 +98,7 @@ div#indexBox p a:active {
 section {
     margin: auto;
     padding: 100px 0px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 section div#information {
     margin: auto;
@@ -350,48 +350,81 @@ section h3#projectHeadSub{
     transition: all ease 1s 0s;
     margin-bottom: 60px;
 }
-section div#myProject {
+section div.myProject {
     display: flex;
     flex-flow: row;
     justify-content: center;
     width: 80%;
     text-align: center;
 }
-section div#myProject a {
+section div.myProject a {
     margin: auto 0;
     margin-right: 50px;
 }
-section div#myProject a img{
+section div.myProject a img.projectTitleImg{
+    width: 85%;
     border: 1px solid black;
     cursor: pointer;
+    transition: all ease 1s 0s;
 }
-section div#myProject div {
+section div.myProject a img.projectTitleImg:hover {
+    width: 100%;
+    box-shadow: 0 0 0 5px rgba(20,170,120,0.5);
+    transition: all ease 1s 0s;
+}
+section div.myProject div {
     width: 35%;
     margin: 0 0;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     padding: 60px 30px;
 }
-section div#myProject div h3 {
+section div.myProject div h3 {
     font-family: 'Sawarabi Mincho';
     font-size: 35px;
     transition: all ease 2s 0s;
 }
-section div#myProject div h3:hover {
+section div.myProject div h3:hover {
     color: rgb(20,170,120);
     transition: all ease 1s 0s;
 }
-section div#myProject div p {
+section div.myProject div p {
     margin-top: 30px;
     width: 100%;
     font-family: 'Sawarabi Mincho';
     font-size: 20px;
 }
-section div#myProject div p span {
+section div.myProject div p span {
     font-size: 25px;
     color: red;
 }
 
+
+section div#gitbox {
+    margin-top: 170px;
+    width: 80%;
+    text-align: center;
+}
+section div#gitbox a {
+    margin: auto;
+    text-align: center;
+}
+section div#gitbox img#githubLogo {
+    cursor: pointer;
+    width: 9%;
+    border: 1xp soldi black;
+    border-radius: 1000px;
+    transition: all ease 2s 0s;
+    margin: auto;
+    text-align: center;
+}
+section div#gitbox img#githubLogo:hover {
+    width: 13%;
+    border: 2xp soldi rgb(50,200,150);
+    box-shadow: 0 0 0 7px rgba(20,170,120, 0.5);
+    transform: rotate(720deg);
+    transition: all ease 1s 0s;
+}
 
 
 footer {

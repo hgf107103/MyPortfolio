@@ -73,7 +73,7 @@
         <div id="indexText">
             <p><a href="#information">基本情報</a></p>
             <p><a href="#mySkill">スキル情報</a></p>
-            <p><a href="#myProject">プロジェクト</a></p>
+            <p><a href="#projectHead">プロジェクト</a></p>
         </div>
         <input type="button" onclick="indexClose(this)" value="畳む">
         <input type="button" id="indexColser" style="display: none; margin-top: 3px;" onclick="this.parentElement.style.display = 'none'" value="消す">
@@ -214,14 +214,17 @@
         </div>
         <h2 id="projectHead"><span>プロジェクト</span></h2>
         <h3 id="projectHeadSub">写真を押すと詳細情報が見れます。</h3>
-        <div id="myProject">
-            <a href="Project/webRestaurant.html"><img src="projectImg/RetaurantWeb01.png" class="wow fadeInDown" data-wow-offset="50" data-wow-duration="2s" data-wow-delay="0.5s" alt="index01"></a>
+        <div class="myProject">
+            <a href="Project/webRestaurant.html"><img src="projectImg/RetaurantWeb01.png" class="wow fadeInDown projectTitleImg" data-wow-offset="50" data-wow-duration="2s" data-wow-delay="0.5s" alt="index01"></a>
             <div class="wow fadeInUp" data-wow-offset="50" data-wow-duration="2s" data-wow-delay="1.5s">
                 <h3>Web Restaurant</h3>
                 <p><span>使用技術</span><br>JSP、Java、Servlet、Javascript、CSS、MySQL、Git</p>
                 <p><span>作業期間</span><br>2020.04.28 ~ 2020.05.27</p>
                 <p><span>概要</span><br>MVCパターンモーデル2でデザインしたホームページです。ログイン、会員管理、注文管理、注文内訳確認、テーブル管理、メニュー管理などの機能がある小さなレストランを充実に具現してみました。データベースはMySQLを使用し、NAVERのDBServerを借りました。</p>
             </div>
+        </div>
+        <div id="gitBox">
+            <a href="https://github.com/hgf107103" target="_blank"><img src="github.png" id="githubLogo" alt="github" class="wow fadeInUp" data-wow-offset="250" data-wow-duration="1s" data-wow-delay="0.5s"></a>
         </div>
     </section>
     <div id="htmlmodal" class="modal">
