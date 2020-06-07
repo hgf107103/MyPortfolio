@@ -27,6 +27,7 @@ header h1 {
     transition: all ease 1s 0s;
 }
 header h1 span {
+    cursor: pointer;
     color: rgb(250, 250, 250);
     transition: all ease 1s 0s;
 }
