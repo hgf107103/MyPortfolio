@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <title>Web Restaurant</title>
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&Do+Hyeon&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../defaultStyle.css">
     <link rel="stylesheet" href="projectStyle.css">
     <link rel="stylesheet" href="animate.css">
     <link rel="shortcut icon" href="../myfavicon.ico" type="image/x-icon">
@@ -12,6 +13,12 @@
     <script type="text/javascript" src="wow.min.js"></script>
 <script>
     new WOW().init();
+
+    window.onload = function() {
+        setTimeout (function () {
+            scrollTo(0,0);
+        }, 100);
+    }
 
     function bannerClose(bannerSwitch) {
         try {
@@ -32,6 +39,26 @@
             console.log("bannerClose_ERROR : " + e);
         }
     }
+
+    function indexClose(indexSwitch) {
+        try {
+            if (indexSwitch.value == '畳む') {
+                indexSwitch.value = '開く'
+                document.getElementById("indexText").style.display = 'none';
+                document.getElementById("indexTitle").style.paddingBottom = '0px';
+                document.getElementById("indexColser").style.display = 'block';
+
+            } else if (indexSwitch.value == '開く') {
+                indexSwitch.value = '畳む'
+                document.getElementById("indexText").style.display = 'block';
+                document.getElementById("indexTitle").style.paddingBottom = '20px';
+                document.getElementById("indexColser").style.display = 'none';
+
+            }
+        } catch (error) {
+            console.log("indexClose_ERROR : " + e);
+        }
+    }
 </script>
 </head>
 <body>
@@ -43,7 +70,18 @@
 
 
     <section>
-        <h1><span>ユーザー機能</span></h1>
+        <div id="indexBox" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+            <h4 id="indexTitle">目次</h4>
+            <div id="indexText">
+                <p><a href="#user">ユーザー機能</a></p>
+                <p><a href="#master">マスター機能</a></p>
+                <p><a href="#guest">ゲスト機能</a></p>
+                <p><a href="#databaseHead">データベース</a></p>
+            </div>
+            <input type="button" onclick="indexClose(this)" value="畳む">
+            <input type="button" id="indexColser" style="display: none; margin-top: 3px;" onclick="this.parentElement.style.display = 'none'" value="消す">
+        </div>
+        <h1 id="user"><span>ユーザー機能</span></h1>
         <div class="flexBox">
             <img src="projectImg/RetaurantWeb01.png" class="wow fadeInDown leftImg" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s" alt="index">
             <h2 class="wow fadeInUp projectInfo" data-wow-offset="150" data-wow-duration="2s" data-wow-delay="0.8s">
@@ -79,7 +117,7 @@
             </h2>
         </div>
         <hr class="wow fadeIn" data-wow-offset="50" data-wow-duration="2s" data-wow-delay="0.5s">
-        <h1><span>マスター機能</span></h1>
+        <h1 id="master"><span>マスター機能</span></h1>
         <div class="flexBox">
             <h2 class="wow fadeInUp projectInfo" data-wow-offset="150" data-wow-duration="2s" data-wow-delay="0.8s">
                 メニュー管理
@@ -157,7 +195,7 @@
             <img src="projectImg/RetaurantWeb16.png" class="wow fadeInDown rightImg" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s" alt="index">
         </div>
         <hr class="wow fadeIn" data-wow-offset="50" data-wow-duration="2s" data-wow-delay="0.5s">
-        <h1><span>ゲスト機能</span></h1>
+        <h1 id="guest"><span>ゲスト機能</span></h1>
         <div class="flexBox">
             <img src="projectImg/RetaurantWeb17.png" class="wow fadeInDown leftImg" data-wow-offset="250" data-wow-duration="2s" data-wow-delay="0.5s" alt="index">
             <h2 class="wow fadeInUp projectInfo" data-wow-offset="150" data-wow-duration="2s" data-wow-delay="0.8s">

@@ -3,42 +3,6 @@
     padding: 0 0;
     cursor: default;
 }
-*:focus {
-    outline: none;
-}
-body {
-    margin: auto;
-    padding: auto;
-    width: 100%;
-}
-header {
-    margin: auto;
-    width: 100%;
-    padding: 80px 0px;
-    background-color: rgb(50, 50, 50);
-    border-bottom: 1px solid black;
-}
-header h1 {
-    margin: auto;
-    text-align: center;
-    width: 100%;
-    font-size: 65px;
-    color: rgb(250, 250, 250);
-    font-family: "Fjalla One";
-    transition: all ease 1s 0s;
-}
-header h1 span {
-    color: rgb(250, 250, 250);
-    transition: all ease 1s 0s;
-}
-header h1 span:hover {
-    color: rgb(20,170,120);
-    transition: all ease 2s 0s;
-}
-
-
-
-
 
 section {
     margin: auto;
@@ -101,7 +65,7 @@ hr {
     margin: 100px auto;
 }
 section h1#databaseHead{
-    width: 35%;
+    width: 100%;
     font-family: "Sawarabi Mincho";
     margin: auto;
     text-align: center;
@@ -144,70 +108,4 @@ section div#gitbox img#githubLogo:hover {
     box-shadow: 0 0 0 10px rgba(20,170,120, 0.5);
     transform: rotate(720deg);
     transition: all ease 1s 0s;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    background-color: white;
-    width: 100%;
-    padding-bottom: 30px;
-    position: fixed;
-    bottom: 0;
-    border-top: 1px solid black;
-}
-footer input[type = button] {
-    padding: 3px 10px;
-    margin: 10px 10px;
-    font-family: "Sawarabi Mincho";
-    font-size: 18px;
-    cursor: pointer;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 0px;
-    transition: all linear 0.5s 0s;
-}
-footer input[type = button]:hover {
-    border: 1px solid rgb(20,170,120);
-    color: rgb(20,170,120);
-    border-radius: 20px;
-    transition: all linear 0.5s 0s;
-}
-footer div {
-    margin: auto;
-    text-align: center;
-    padding-bottom: 20px;
-}
-footer div p {
-    margin: auto;
-    font-family: "Sawarabi Mincho";
-    font-size: 22px;
-}
-footer div p a {
-    cursor: pointer;
-    text-decoration: none;
-    color: gray;
-    transition: all linear 1s 0s;
-}
-footer div p a:hover {
-    color: red;
-    transition: all linear 1s 0s;
-}
-footer div p a:active {
-    text-decoration: none;
 }
